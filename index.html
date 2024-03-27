@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="score-board">
+        <img src="images/logo.svg" alt="" />
+        <div class="score">
+          score
+          <span class="user-score"><h1>0</h1></span>
+        </div>
+      </div>
+      <div class="choices">
+        <div class="choice paper">
+          <img src="images/paper.png" class="icon-paper" alt="" />
+        </div>
+        <div class="choice scissors">
+          <img src="images/scissors.png" class="icon-scissors" alt="" />
+        </div>
+        <div class="choice rock">
+          <img src="images/rock.png" class="icon-rock" alt="" />
+        </div>
+    
+      </div>
+
+      <div class="result">       
+        <div class="userchoice">
+            <h1>YOU PICKED</h1>
+            <div class="userImgContainer">
+              <img id="userPickImage" src="images/Paper.png">
+            </div>
+        </div>
+        <div class="referee"> 
+            <div class="decision"><h1> YOU WIN! </h1></div>
+            <div class="newGame" >PLAY AGAIN</div>
+        </div>
+        <div class="computerchoice">
+            <h1>THE HOUSE PICKED</h1>
+            <div class="compImgContainer">
+              <img id="computerPickImage" src="images/Paper.png" /> 
+            </div>   
+        </div>       
+      </div>    
+      <div class="rules-button"><h1>RULES</h1></div>    
+      <div  class="modal">
+        <div class="modal-content">
+          <h1>RULES</h1>
+         <img src="images/image-rules.svg" alt="">
+         <span class="close">&times;</span>
+        </div>  
+      </div>
+   
+    <script src="script.js"></script>
+  </body>
+</html>
